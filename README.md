@@ -19,12 +19,20 @@ Contact the project maintainer (me) to obtain the required `.env` file. This fil
 
 ### 3. Build and Run the Docker Image
 
-Make sure the `.env` file is located in the root directory of the project.
+Make sure the `.env` file is located in the root directory of the project. To build and start the container, run:
 
 ```bash
-# Build the Docker image
-docker build -t insights-copilot-connector .
+docker-compose up --build
+```
 
-# Run the Docker container with the environment variables
-docker run --env-file .env -p 8090:8090 insights-copilot-connector
+If you make changes to `requirements.txt` or the `docker-compose.yml` file, run:
+
+```bash
+docker-compose build
+```
+
+Otherwise, to re-run the docker image, run:
+
+```bash
+docker-compose up
 ```

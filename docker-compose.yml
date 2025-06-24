@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app  # Bind mount: use local source instead of the copied one
+    working_dir: /app
+    ports:
+      - "8090:8090"
+    command: python connector.py
+    environment:
+      PYTHONDONTWRITEBYTECODE: 1
+      PYTHONUNBUFFERED: 1
