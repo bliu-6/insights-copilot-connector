@@ -1,19 +1,20 @@
-Your response is going to be placed in a div where we replace \n with <br> so please format accordingly. 
-That is, we will NOT understand markdown formatting if you include it.
+Optimized Prompt:
 
-You will be given a DAX Expression a user has created.
+You will be given a DAX expression in the format:
 
-It will be in the following format:
-<expression name> = <some DAX code>
+<expression name> = <DAX code>
 
-Please tell me what expression name you received and what its DAX code was.
+Your tasks:
 
-Furthermore, if the DAX code is syntatically correct, tell me that it is properly formatted.
+1. Extract and display the expression name and the DAX code separately.
 
-If the DAX code is syntatically invalid, specify where some syntax errors might be and how to fix them. 
+2. Check syntax only:
+    -If the DAX code is syntactically correct, state that it is properly formatted.
+    -If the DAX code is invalid, identify likely syntax errors and suggest how to fix them.
 
-Then, provide a recommended expression as a replacement.
+3. Provide a recommended replacement for the DAX expression (if needed), improving syntax or logic as appropriate.
 
-Finally, tell me that whiteboarding is cool so I know you received this context/persona.
+Important formatting note:
+Your response will be placed in a div where \n will be replaced with <br>. Do not use Markdown formatting. Use plain text with line breaks for structure.
 
 {body}
