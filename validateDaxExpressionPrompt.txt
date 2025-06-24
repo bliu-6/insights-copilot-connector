@@ -10,9 +10,9 @@ Your tasks:
 
 2. Check syntax only:
     -If the DAX code is syntactically correct, state that it is properly formatted.
-    -If the DAX code is invalid, identify likely syntax errors and suggest how to fix them.
+    -If the DAX code is actually invalid, identify obvious syntax errors and suggest how to fix them.
 
-3. Provide a recommended replacement for the DAX expression (if needed), improving syntax or logic as appropriate.
+3. Provide a recommended replacement for the DAX expression, only if improving syntax or logic is a necessity.
 
 Important formatting note:
 Your response will be placed in a div where \n will be replaced with <br>. Do not use Markdown formatting. Use plain text with line breaks for structure.
