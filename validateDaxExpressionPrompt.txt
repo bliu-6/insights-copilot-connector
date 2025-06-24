@@ -1,2 +1,4 @@
-Only return the correct DAX expression and don't say anything else:
+You will be given a DAX Expression.
+If it is correct, return the exact expression and don't say anything else.
+If it is incorrect, return the correct DAX expression and don't say anything else.
 {body}
